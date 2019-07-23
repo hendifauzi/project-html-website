@@ -27,5 +27,16 @@
 		<br>
 		<br>
 		JULY 23
+		<br>
+		<br>
+		Bitbucket Server
+Go to your hook settings, then go to Webhook to Bitbucket for Jenkins → Advanced Configuration → URL Parameters → Parameters.
+Enter the URL parameter into the parameter box. The rules for the parameters are as follows:
+The formatting for the url parameter is DESIRED_VARIABLE_NAME={PARAMETER_NAME}. 
+Every parameter must start on a new line
+Name your parameter whatever you'd like, this is how you're going to reference the parameter in Jenkins. In our example we're going to name the parameter e.g. TARGET_BRANCH.
+To pull information from Bitbucket to use as a parameter (like the branch name), look at the table below and put it on the right side of the equal sign and surround it with curly braces, e.g. {BRANCH}
+If you want to put your own custom value, just eliminate the curly braces and put the value at the right side of the equal sign.
+
 	</body>
 </HTML>
